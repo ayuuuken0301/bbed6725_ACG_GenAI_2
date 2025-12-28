@@ -619,7 +619,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const selectedValue = this.value;
             
             if (selectedValue) {
-                const imagePath = `assets/risks/Prompt${selectedValue}.png`;
+                const imagePath = `assets/Risks/Prompt${selectedValue}.png`;
                 promptImage.src = imagePath;
                 promptImage.alt = `Prompt ${selectedValue} result`;
                 promptImageContainer.style.display = 'block';
