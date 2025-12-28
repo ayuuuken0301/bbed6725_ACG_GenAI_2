@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI in ACG Industry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <h1 class="logo">GenAI in ACG Industry</h1>
+                <ul class="nav-tabs">
+                    <li><a href="#introduction" class="nav-tab active" data-tab="introduction">Introduction</a></li>
+                    <li><a href="#benefits" class="nav-tab" data-tab="benefits">Benefits</a></li>
+                    <li><a href="#risks" class="nav-tab" data-tab="risks">Risks</a></li>
+                    <li><a href="#mitigation" class="nav-tab" data-tab="mitigation">Mitigation</a></li>
+                    <li><a href="#references" class="nav-tab" data-tab="references">References</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Introduction Tab -->
+        <section id="introduction" class="tab-content active">
+            <div class="container">
+                <h2>Introduction of ACG Industry</h2>
+                
+                <div class="content-section">
+                    <h3>What is the ACG industry?</h3>
+                    <p>ACG stands for <strong>Anime, Comic, and Games</strong>. Click on each letter to learn more:</p>
+                    
+                    <div class="acg-letters-container">
+                        <div class="acg-letter" data-letter="a">
+                            <div class="acg-letter-display">A</div>
+                            <div class="acg-letter-label">Anime</div>
+                        </div>
+                        <div class="acg-letter" data-letter="c">
+                            <div class="acg-letter-display">C</div>
+                            <div class="acg-letter-label">Comic</div>
+                        </div>
+                        <div class="acg-letter" data-letter="g">
+                            <div class="acg-letter-display">G</div>
+                            <div class="acg-letter-label">Games</div>
+                        </div>
+                    </div>
+                    
+                    <div class="acg-details-container" id="acg-details-container">
+                        <p class="acg-placeholder">Click on a letter above to see details</p>
+                        
+                        <div class="acg-details" id="acg-details-a" style="display: none;">
+                            <h4>A (Anime)</h4>
+                            <p>Animated productions, including TV anime, animated films, etc.</p>
+                            <div class="acg-images-grid">
+                                <div class="acg-image-item">
+                                    <img src="assets/introduction/Anime 1_Tamako Market.jpg" alt="Tamako Market">
+                                    <p class="acg-image-caption">Tamako Market</p>
+                                    <a href="https://upload.wikimedia.org/wikipedia/zh/7/74/Tamako.jpg" target="_blank" class="acg-source-link">Source</a>
+                                </div>
+                                <div class="acg-image-item">
+                                    <img src="assets/introduction/Anime 2_Chikawa.jpg" alt="Chikawa">
+                                    <p class="acg-image-caption">Chikawa</p>
+                                    <a href="https://m.media-amazon.com/images/M/MV5BMjRjN2IzMWQtY2RjOS00ZGFlLThiMWEtNjQ3YWJkOTczMzU0XkEyXkFqcGc@._V1_.jpg" target="_blank" class="acg-source-link">Source</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="acg-details" id="acg-details-c" style="display: none;">
+                            <h4>C (Comic)</h4>
+                            <p>Comics and manga</p>
+                            <div class="acg-images-grid">
+                                <div class="acg-image-item">
+                                    <img src="assets/introduction/Comic_1_Manga_Time_Kirara.jpg" alt="Manga Time Kirara">
+                                    <p class="acg-image-caption">Manga Time Kirara</p>
+                                    <a href="https://zh.wikipedia.org/wiki/Manga_Time_Kirara#/media/File:Manga_Time_Kirara.jpg" target="_blank" class="acg-source-link">Source</a>
+                                </div>
+                                <div class="acg-image-item">
+                                    <img src="assets/introduction/Comic 2_The Ravages of Time.jpg" alt="The Ravages of Time">
+                                    <p class="acg-image-caption">The Ravages of Time</p>
+                                    <a href="https://upload.wikimedia.org/wikipedia/zh/b/b4/%E7%81%AB%E9%B3%B3%E7%87%8E%E5%8E%9F.jpg" target="_blank" class="acg-source-link">Source</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="acg-details" id="acg-details-g" style="display: none;">
+                            <h4>G (Games)</h4>
+                            <p>Video games, including arcade games, mobile games, and more.</p>
+                            <div class="acg-images-grid">
+                                <div class="acg-image-item">
+                                    <img src="assets/introduction/Game 1_Mario Kart.jpg" alt="Mario Kart">
+                                    <p class="acg-image-caption">Mario Kart</p>
+                                    <a href="https://m.media-amazon.com/images/I/71jZAGKRAQL._AC_UF1000,1000_QL80_.jpg" target="_blank" class="acg-source-link">Source</a>
+                                </div>
+                                <div class="acg-image-item">
+                                    <img src="assets/introduction/Game 2_ Chinese Paladin Sword and Fairy.jpg" alt="Chinese Paladin: Sword and Fairy">
+                                    <p class="acg-image-caption">Chinese Paladin: Sword and Fairy</p>
+                                    <a href="https://lh3.googleusercontent.com/proxy/Z7fDUvw_khLhXUQ3S6IO5qppvlgG_f2pKZjOItvTjO7fH6hSEwdRae3zHGTE_UKydCI2AjuPFL-ylsNwg6lqaZ6LwcSksvhP46CVknPUYWB8Zw" target="_blank" class="acg-source-link">Source</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h3>Value Chain of ACG Industry</h3>
+                    <p>Click on each stage to learn more:</p>
+                    
+                    <div class="stepper-container">
+                        <div class="stepper">
+                            <div class="step" data-step="upstream">
+                                <div class="step-circle">1</div>
+                                <div class="step-label">Upstream</div>
+                            </div>
+                            <div class="step-connector"></div>
+                            <div class="step" data-step="midstream">
+                                <div class="step-circle">2</div>
+                                <div class="step-label">Midstream</div>
+                            </div>
+                            <div class="step-connector"></div>
+                            <div class="step" data-step="downstream">
+                                <div class="step-circle">3</div>
+                                <div class="step-label">Downstream</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-description" id="step-description">
+                        <p class="placeholder-text">Click on a stage above to see details</p>
+
+                    <div class="step-details" id="upstream-details" style="display: none;">
+                        <h4>Upstream: IP (Intellectual Property) Creation</h4>
+                        <p>The stories and characters of IP being developed.</p>
+                        <p><strong>Example:</strong> Artists design the stories / characters</p>
+                    </div>
+
+                    <div class="step-details" id="midstream-details" style="display: none;">
+                        <h4>Midstream: Multi-platform Adoption</h4>
+                        <p>Manufacturing of the content across anime, comic and game.</p>
+                        <p><strong>Example:</strong> Transforming the manga / comics into anime</p>
+                    </div>
+
+                    <div class="step-details" id="downstream-details" style="display: none;">
+                        <h4>Downstream: Distribution and Fan Engagement</h4>
+                        <p>Distributing the anime through online streaming websites.</p>
+                        <p><strong>Examples:</strong> Organizing concert live / designing merchandise</p>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="section-navigation">
+                    <button class="next-section-btn" data-next="benefits">Next: Benefits →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Tab -->
+        <section id="benefits" class="tab-content">
+            <div class="container">
+                <h2>Benefits of GenAI in Anime Industry</h2>
+
+                <div class="content-section">
+                    <!-- Initial State: Test Introduction -->
+                    <div class="turing-test-intro" id="turing-test-intro">
+                        <h3>Test: AI or Human?</h3>
+                        <p>In this test, you will be required to answer 3 questions. For each question, there are two images, you need to determine which one is created by human.</p>
+                        <button class="start-test-btn" id="start-test-btn">Start Test!</button>
+                    </div>
+
+                    <!-- Test State: Question Display -->
+                    <div class="turing-test-container" id="turing-test-container" style="display: none;">
+                        <div class="test-question-text" id="test-question-text">
+                            <h4>Question <span id="question-number">1</span>: Which one is created by human?</h4>
+                        </div>
+                        
+                        <!-- Row 1: Images -->
+                        <div class="test-images-row">
+                            <div class="test-image-item">
+                                <div class="test-image-container" id="test-image-container-1">
+                                    <img id="test-image-1" src="" alt="Image 1" data-answer="">
+                                </div>
+                                <p class="test-image-source" id="test-image-source-1" style="display: none;"><em>Source: <a href="https://x.com/LoveLive_staff/status/1813513985586831795" target="_blank">LoveLive! Days</a></em></p>
+                            </div>
+                            <div class="test-image-item">
+                                <div class="test-image-container" id="test-image-container-2">
+                                    <img id="test-image-2" src="" alt="Image 2" data-answer="">
+                                </div>
+                                <p class="test-image-source" id="test-image-source-2" style="display: none;"><em>Source: Image generated by Gemini Nano Banana Pro</em></p>
+                            </div>
+                        </div>
+                        
+                        <!-- Row 2: Buttons -->
+                        <div class="test-buttons-row">
+                            <button class="guess-btn" id="guess-btn-1">Image 1</button>
+                            <button class="guess-btn" id="guess-btn-2">Image 2</button>
+                        </div>
+                        
+                        <!-- Row 3: Answer Display -->
+                        <div class="test-result-row" id="test-result-row" style="display: none;">
+                        <div class="test-result" id="test-result"></div>
+                            <button class="next-question-btn" id="next-question-btn" style="display: none;">Next Question</button>
+                        </div>
+                    </div>
+
+                    <!-- Completion Screen: Score Display -->
+                    <div class="turing-test-completion" id="turing-test-completion" style="display: none;">
+                        <h3>Test Complete!</h3>
+                        <div class="score-display">
+                            <div class="score-circle">
+                                <span class="score-number" id="score-number">0</span>
+                                <span class="score-total">/ 3</span>
+                            </div>
+                            <p class="score-text" id="score-text">You scored <span id="score-display">0</span> out of 3!</p>
+                        </div>
+                        <button class="restart-test-btn" id="restart-test-btn">Take Test Again</button>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h3>Higher Production Speed and Cost Reduction</h3>
+                    
+                    <div class="crisis-section">
+                        <h4>The Current Crisis in the Industry</h4>
+                        <p>The anime industry is facing a <strong>"scissors effect."</strong> While the market has been growing, the domestic labor supply of animators in Japan is shrinking. Declining birth rate and brain drain caused by poor compensation led to talent shortage in the industry.</p>
+                    </div>
+
+                    <div class="bottleneck-section">
+                        <h4>The Existing Bottleneck</h4>
+                        <p>In traditional anime production, there are many low-value-added tasks that are labour-intensive, such as:</p>
+                        
+                        <div class="bottleneck-grid">
+                            <div class="bottleneck-box">
+                                <div class="bottleneck-image">
+                                    <img src="assets/Benefits/Drawing static background art_LoveLive.png" alt="Drawing static background art">
+                                </div>
+                                <p class="bottleneck-text">Drawing static background art</p>
+                                <p class="bottleneck-source">Source: <em>Love Live!</em></p>
+                            </div>
+                            
+                            <div class="bottleneck-box">
+                                <div class="bottleneck-image">
+                                    <img src="assets/Benefits/scenes crowded with people_the wind rises.png" alt="Scenes crowded with people">
+                                </div>
+                                <p class="bottleneck-text">Scenes crowded with people</p>
+                                <p class="bottleneck-source">Source: <em>The Wind Rises</em></p>
+                            </div>
+                            
+                            <div class="bottleneck-box">
+                                <div class="bottleneck-image">
+                                    <img src="assets/Benefits/in-between frames_The Wind Rises.jpg" alt="In-between frames">
+                                </div>
+                                <p class="bottleneck-text">In-between frames</p>
+                                <p class="bottleneck-source">Source: <em>The Wind Rises</em></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="solution-section">
+                        <h4>GenAI to Facilitate Labour Force Reallocation</h4>
+                        <p>By utilizing GenAI to automate these non-critical tasks, labor costs for completing them can be reduced because less time and labor are needed. Consequently, manpower can be shifted to essential key tasks instead.</p>
+                    </div>
+
+                    <div class="example-box">
+                        <h4>Example 1: K&K Design</h4>
+                        <p>K&K Design is an anime studio based in Nagoya (名古屋), Japan. They have used a customised Stable Diffusion-like model to generate in-between frames, backgrounds and coloring, with human staff checking and correcting all AI materials.</p>
+                        
+                        <div class="comparison-disclaimer">
+                            <p><em><strong>Disclaimer:</strong> Due to copyright purposes, the images below in this section are not the actual work performed by K&K Design. The images are for illustration only, but the figures (time comparisons) are actual figures.</em></p>
+                        </div>
+                        
+                        <p class="slider-instruction"><em>💡 Try dragging the slider to compare before and after results!</em></p>
+                        
+                        <div class="comparison-panels">
+                            <!-- Panel 1: Background Production -->
+                            <div class="comparison-panel">
+                                <h5>Background Production</h5>
+                                <div class="slider-container" id="background-slider">
+                                    <div class="slider-wrapper">
+                                        <div class="slider-image slider-image-before">
+                                            <img src="assets/Benefits/background_before.png" alt="Before: Manual background sketch">
+                                            <div class="slider-label slider-label-before">
+                                                <p>Before: <span>1 week</span> <span class="method">(Manual)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="slider-image slider-image-after">
+                                            <img src="assets/Benefits/background_after.png" alt="After: GenAI + Human background">
+                                            <div class="slider-label slider-label-after">
+                                                <p>After: <span>~5 minutes</span> <span class="method">(GenAI + Human)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="slider-handle" id="background-slider-handle">
+                                            <div class="slider-handle-icon">🖌️</div>
+                                            <div class="slider-handle-line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="comparison-attribution"><em>The above two images are generated based on a photograph taken by the website owner in Colmar, France, June 2024</em></p>
+                            </div>
+
+                            <!-- Panel 2: In-between Frames -->
+                            <div class="comparison-panel">
+                                <h5>In-between Frames</h5>
+                                <div class="slider-container" id="inbetween-slider">
+                                    <div class="slider-wrapper">
+                                        <div class="slider-image slider-image-before">
+                                            <img src="assets/Benefits/inbetween_before.png" alt="Before: Manual single frame">
+                                            <div class="slider-label slider-label-before">
+                                                <p>Before: <span>1-3 weeks</span> <span class="method">(Manual)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="slider-image slider-image-after">
+                                            <img src="assets/Benefits/inbetween_after.png" alt="After: GenAI + Human frame sequence">
+                                            <div class="slider-label slider-label-after">
+                                                <p>After: <span>4-5 hours</span> <span class="method">(GenAI + Human)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="slider-handle" id="inbetween-slider-handle">
+                                            <div class="slider-handle-icon">▶️</div>
+                                            <div class="slider-handle-line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="comparison-attribution"><em>The above two images (before and after) are generated by AI for illustration purposes.</em></p>
+                            </div>
+                        </div>
+
+                        <div class="references">
+                            <h5>Reference Links:</h5>
+                            <ul>
+                                <li><a href="https://kr-asia.com/japans-anime-industry-looks-to-ai-to-solve-labor-crunch" target="_blank">Japan's anime industry looks to AI to solve labor crunch</a></li>
+                                <li><a href="https://www.nikkei.com/article/DGXZQOUA309VP0Q4A730C2000000/" target="_blank">日本アニメ、AIと分業で作画サクサク　長時間労働是正へ</a></li>
+                                <li><a href="https://kandk-d.com/" target="_blank">Official website of K&K Design</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h3>GenAI Facilitates Hyper-personalization Products</h3>
+                    <p>Hyper-personalization refers to using AI, real-time data, and advanced analytics to create highly tailored experiences for each customer. GenAI enables businesses to provide highly personalised products within a low cost (when compared with employing a group of junior employees to do so).</p>
+                    
+                    <div class="example-box">
+                        <h4>Example 2: Justice Online (逆水寒)</h4>
+                        <p>Justice Online is a mobile game developed by NetEase, a Chinese tech company. In traditional games, non-player characters (NPCs) are often limited to predefined scripts. However, in this mobile game, Generative AI (GenAI) technology is utilized to grant NPCs independent personalities, allowing them to provide personalized emotional feedback based on their interactions with users.</p>                        
+                        <div class="references">
+                            <h5>Reference Links:</h5>
+                            <ul>
+                                <li><a href="https://gnn.gamer.com.tw/detail.php?sn=270253" target="_blank">開放世界 MMO《逆水寒》製作人專訪 結合 AI 技術打造顛覆傳統的新時代 MMO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-navigation">
+                    <button class="next-section-btn" data-next="risks">Next: Risks →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Risks Tab -->
+        <section id="risks" class="tab-content">
+            <div class="container">
+                <h2>Potential Risks</h2>
+
+                <div class="content-section">
+                
+                    <p>The previous section explores the benefits of GenAI in ACG industry. Remember the turing test we have just completed in the previous section:</p>
+                    <ul class="preface-questions">
+                        <li>Since it is quite difficult to differentiate AI-generated and human-made images, is it really possible to just use GenAI to produce high-quality anime art?</li>
+                        <li>Is there any potential risks that we should consider before adopting this technology?</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h3>Risk 1: Can AI Reflect the Intrinsic Meaning of Expression?</h3>
+                    <p>GenAI art offers immediate, cost-effective solutions for mass production, maximizing business output. However, can AI reflect the creator's "intrinsic meaning," intent, or original expression?</p>
+                    <p>Hayao Miyazaki has openly rejected using AI-generated art in his work, calling AI-type images an insult to life and saying he would never incorporate such technology into Studio Ghibli projects, which implicitly defends hand-drawn, human-made animation as the studio's core.</p>
+
+                    <div class="example-box risk-example">
+                        <div class="miyazaki-header">
+                            <div class="miyazaki-image">
+                                <img src="assets/risks/Miyazaki Hayao.webp" alt="Hayao Miyazaki">
+                            </div>
+                            <div class="miyazaki-content">
+                        <h4>Example: Hayao Miyazaki (宮崎駿)</h4>
+                        <p>Hayao Miyazaki, a legendary animator who produced popular works like <em>The Wind Rises</em> (風起了) and <em>Ponyo</em> (崖上的波兒), has openly rejected using AI-generated art in his work. He believed that AI threatens the essence of human creativity and reiterated that the studio's core is hand-drawn and human-made animation and would never incorporate such technologies into Studio Ghibli (吉卜力工作室) projects.</p>
+                            </div>
+                        </div>
+                        
+                        <blockquote>
+                            <p>"AI-type images are an insult to life itself"</p>
+                            <cite>— Hayao Miyazaki</cite>
+                        </blockquote>
+                        
+                        <p>Viewers look for human-made products in his studio. If AI is used, it may violate the authentic expression that audiences expect from Studio Ghibli.</p>
+                    </div>
+
+                    <div class="content-subsection">
+                        <h4>AI-generated images cannot replace human-made art, why?</h4>
+                        <p> A research paper published in the US explored this question. Researchers found that even when images are visually identical, customers consistently place a higher value on work created by human hands.</p> <br>
+                        <p>Participants were shown artworks and randomly given either a "Human-created" or "AI-generated" label. Even though the image was actually made by AI, the human-labeled images were rated significantly higher in terms of Like, Beauty, emotional depth, and Monetary Worth.</p>
+
+                        <div class="premium-value-box">
+                            <h5>Premium value created by human-made images</h5>
+                            <div class="value-stats">
+                                <div class="value-stat-item value-high">
+                                    <div class="value-stat-number">0.61</div>
+                                    <div class="value-stat-term">Monetary worth</div>
+                                </div>
+                                <div class="value-stat-item value-medium-high">
+                                    <div class="value-stat-number">0.47</div>
+                                    <div class="value-stat-term">Emotional depth</div>
+                                </div>
+                                <div class="value-stat-item value-medium-low">
+                                    <div class="value-stat-number">0.22</div>
+                                    <div class="value-stat-term">Visual Beauty</div>
+                                </div>
+                                <div class="value-stat-item value-low">
+                                    <div class="value-stat-number">0.17</div>
+                                    <div class="value-stat-term">General Liking</div>
+                                </div>
+                            </div>
+                            <p><strong>Monetary worth of 0.61</strong> means that if the monetary value of human-made images are 61% higher than that of ai-generated images.</p>
+                            
+                            <div class="interpretation-note">
+                                <p><strong>Note: Interpreting each factor</strong></p>
+                                <ul>
+                                    <li><strong>Monetary Worth:</strong> The perceived financial value and how much someone is willing to pay for the work.</li>
+                                    <li><strong>Emotional Depth:</strong> The perceived soul or deep meaning behind the image.</li>
+                                    <li><strong>Visual Beauty:</strong> The visual appeal of the image, how aesthetically pleasing it looks to the eye.</li>
+                                    <li><strong>General Liking:</strong> The immediate preference for the image (simply "enjoying" what you see).</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="effort-heuristic">
+                            <h5>Effort Heuristic</h5>
+                            <p>The study found that a major driver of value is the perceived effort and narrative behind a piece. Customers don't just buy an image; they buy the story, time, effort, and the intentionality that only a human creator can provide. When people know a human spent time and care on a project, they find the result more profound and are willing to invest more in it.</p>
+                            
+                            <div class="effort-infographic">
+                                <img src="assets/risks/infrorgaphic_human_effort.png" alt="Human Effort Infographic" class="infographic-image">
+                                <p class="infographic-caption"><em>Human efforts represents the value of an artistic product</em></p>
+                            </div>
+                        </div>
+
+                        <div class="risk-reference" style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                            <p><strong>Journal article:</strong> <a href="https://link.springer.com/article/10.1186/s41235-023-00499-6" target="_blank">Humans versus AI: whether and why we prefer human-created compared to AI-created artwork</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h3>Risk 2: Operational Risks of Integrating GenAI into Anime Production</h3>
+                    <p>While GenAI is exceptionally powerful in terms of speed, the successful implementation
+                        of these tools into a production workflow still requires significant human effort.
+                        A studio cannot simply "plug in" GenAI by subscribing to or developing a tool.
+                        It requires a fundamental change in the creative mindset and operational structure.</p> <br>
+                    <p>There are three challenges that studios may face when integrating GenAI into their production processes:</p>
+                    
+                    <div class="risk-challenges">
+                        <div class="flipbox-item">
+                            <div class="flipbox-header" data-flipbox="1">
+                                <h4>1. The Knowledge Gap of Digital Literacy</h4>
+                                <span class="flipbox-icon">▼</span>
+                            </div>
+                            <div class="flipbox-content" id="flipbox-content-1" style="display: none;">
+                                <p>Traditional animators are trained in physical or digital brushwork, not AI skills nor "Prompt Engineering".
+                                    Without formal upskilling, employees may struggle to communicate their artistic intent to the AI. This often leads to a <strong>Trial and Error Loop,</strong>
+                                    where refining AI outputs takes more time than manual drawing, defeating the purpose of the technology.</p>
+                                
+                                <div class="prompt-selector-container" style="margin-top: 2rem;">
+                                    <label for="prompt-selector" style="display: block; margin-bottom: 1rem; font-weight: 600; color: var(--text-primary);">A slight change in prompt can create images in totally different styles. Select a prompt to see the result:</label>
+                                    <select id="prompt-selector" class="prompt-selector">
+                                        <option value="">-- Select a prompt --</option>
+                                        <option value="1">Prompt 1: Generate an image showing the Victoria Harbour of Hong Kong</option>
+                                        <option value="2">Prompt 2: Generate an image showing the Victoria Harbour of Hong Kong in ink painting style</option>
+                                        <option value="3">Prompt 3: Generate an image showing the Victoria Harbour of Hong Kong in Kawaii style</option>
+                                    </select>
+                                    
+                                    <div class="prompt-image-container" id="prompt-image-container" style="margin-top: 1.5rem; display: none;">
+                                        <img id="prompt-image" src="" alt="Prompt result" class="prompt-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flipbox-item">
+                            <div class="flipbox-header" data-flipbox="2">
+                                <h4>2. The Ceiling of Creativity</h4>
+                                <span class="flipbox-icon">▼</span>
+                            </div>
+                            <div class="flipbox-content" id="flipbox-content-2" style="display: none;">
+                                <p>Current GenAI models excel at common assets, such as generic school corridors or standard cityscapes.
+                                    However, the ACG industry thrives on unique world-building. For projects featuring uncommon backgrounds or avant-garde settings,
+                                    AI often falls into a <strong>Generalization Trap.</strong> This results in work that feels "AI-ish", it looks perfect but lacking the "soul" and nuance required for high-end production.</p>
+                            </div>
+                        </div>
+
+                        <div class="flipbox-item">
+                            <div class="flipbox-header" data-flipbox="3">
+                                <h4>3. Quality Control</h4>
+                                <span class="flipbox-icon">▼</span>
+                            </div>
+                            <div class="flipbox-content" id="flipbox-content-3" style="display: none;">
+                                <p>The inherent design of GenAI makes it need to rebuilds each frame or asset from scratch, even those they look the same by us. This might leads to inconsistency on character features, especially on some tiny stuff, such as the number of buttons on a jacket.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-navigation">
+                    <button class="next-section-btn" data-next="mitigation">Next: Mitigation Measures →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mitigation Measures Tab -->
+        <section id="mitigation" class="tab-content">
+            <div class="container">
+                <h2>Mitigation Measures</h2>
+                <div class="content-section">
+                    <p>To navigate the integration of GenAI while maintaining the uniqueness of artwork and its economic value, the animation company can consider taking the following strategies:</p>
+                </div>
+
+                <div class="content-section">
+                    <div class="mitigation-strategy">
+                        <h3>1. Workforce Upskilling</h3>
+                        <p>To bridge the "Knowledge Gap" of using digital tools, animators need transform their role from manual labour to a creative director of AI tools.</p>
+                        <br>
+                        <p>Training includes:</p>
+                        <div class="strategy-points-grid">
+                            <div class="strategy-point-box">
+                                <div class="strategy-point-header" data-strategy="ai-literacy">
+                                    <h4>AI Literacy</h4>
+                                    <span class="strategy-point-icon">▼</span>
+                                </div>
+                                <div class="strategy-point-content" id="strategy-content-ai-literacy">
+                                    <p>Provide training for employees on how to use GenAI tools to translate their artistic intent accurately.</p>
+                                </div>
+                            </div>
+                            <div class="strategy-point-box">
+                                <div class="strategy-point-header" data-strategy="mindset-development">
+                                    <h4>Mindset Development</h4>
+                                    <span class="strategy-point-icon">▼</span>
+                                </div>
+                                <div class="strategy-point-content" id="strategy-content-mindset-development">
+                                    <p>Educate staff on the strategic use of GenAI to ensure they do not over-rely on digital tools, thereby preserving their unique creativity and foundational drawing skills.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <div class="mitigation-strategy">
+                        <h3>2. Transparency on AI Usage</h3>
+                        <p>To combat the "Effort Heuristic" risk—where consumers value human work more—studios must be transparent about the production process.</p>
+                        <div class="strategy-points-grid">
+                            <div class="strategy-point-box">
+                                <div class="strategy-point-header" data-strategy="disclosure">
+                                    <h4>Disclosure on Production Process</h4>
+                                    <span class="strategy-point-icon">▼</span>
+                                </div>
+                                <div class="strategy-point-content" id="strategy-content-disclosure">
+                                    <p>Indicate which segments (e.g., static backgrounds) used AI assistance and which (e.g., key character animation) were entirely human-made through disclosures on official websites or annual report</p>
+                                </div>
+                            </div>
+                            <div class="strategy-point-box">
+                                <div class="strategy-point-header" data-strategy="booklets">
+                                    <h4>Behind-the-Scenes Booklets</h4>
+                                    <span class="strategy-point-icon">▼</span>
+                                </div>
+                                <div class="strategy-point-content" id="strategy-content-booklets">
+                                    <p>Sell "Production Art Books" that detail the human decision-making process. By showing that AI was a tool guided by human directors, studios can maintain the "Premium Value" and emotional depth audiences expect.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <div class="mitigation-strategy">
+                        <h3>3. Developing Proprietary Model</h3>
+                        <p>To solve the "Ceiling of Creativity", studios can develop in-house tailor-made AI models, instead of using the public and generic AI models.</p>
+                        <div class="strategy-points-grid">
+                            <div class="strategy-point-box">
+                                <div class="strategy-point-header" data-strategy="training-data">
+                                    <h4>In-House Training Data</h4>
+                                    <span class="strategy-point-icon">▼</span>
+                                </div>
+                                <div class="strategy-point-content" id="strategy-content-training-data">
+                                    <p>Develop proprietary GenAI models trained exclusively on the studio's own historical library of graphics and character designs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-navigation">
+                    <button class="next-section-btn" data-next="references">Next: References →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- References Tab -->
+        <section id="references" class="tab-content">
+            <div class="container">
+                <h2>References</h2>
+                
+                <div class="content-section">
+                    <h3>Introduction Section</h3>
+                    
+                    <div class="reference-category">
+                        <h4>ACG Industry Examples - Anime</h4>
+                        <ul class="reference-list">
+                            <li>Tamako Market: <a href="https://upload.wikimedia.org/wikipedia/zh/7/74/Tamako.jpg" target="_blank">https://upload.wikimedia.org/wikipedia/zh/7/74/Tamako.jpg</a></li>
+                            <li>Chikawa: <a href="https://m.media-amazon.com/images/M/MV5BMjRjN2IzMWQtY2RjOS00ZGFlLThiMWEtNjQ3YWJkOTczMzU0XkEyXkFqcGc@._V1_.jpg" target="_blank">https://m.media-amazon.com/images/M/MV5BMjRjN2IzMWQtY2RjOS00ZGFlLThiMWEtNjQ3YWJkOTczMzU0XkEyXkFqcGc@._V1_.jpg</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="reference-category">
+                        <h4>ACG Industry Examples - Comic</h4>
+                        <ul class="reference-list">
+                            <li>Manga Time Kirara: <a href="https://zh.wikipedia.org/wiki/Manga_Time_Kirara#/media/File:Manga_Time_Kirara.jpg" target="_blank">https://zh.wikipedia.org/wiki/Manga_Time_Kirara#/media/File:Manga_Time_Kirara.jpg</a></li>
+                            <li>Dengeki G's Magazine: <a href="https://www.fujisan.co.jp/product/1281691947/b/881778/" target="_blank">https://www.fujisan.co.jp/product/1281691947/b/881778/</a></li>
+                            <li>The Ravages of Time: <a href="https://upload.wikimedia.org/wikipedia/zh/b/b4/%E7%81%AB%E9%B3%B3%E7%87%8E%E5%8E%9F.jpg" target="_blank">https://upload.wikimedia.org/wikipedia/zh/b/b4/%E7%81%AB%E9%B3%B3%E7%87%8E%E5%8E%9F.jpg</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="reference-category">
+                        <h4>ACG Industry Examples - Games</h4>
+                        <ul class="reference-list">
+                            <li>Mario Kart: <a href="https://m.media-amazon.com/images/I/71jZAGKRAQL._AC_UF1000,1000_QL80_.jpg" target="_blank">https://m.media-amazon.com/images/I/71jZAGKRAQL._AC_UF1000,1000_QL80_.jpg</a></li>
+                            <li>Chinese Paladin: Sword and Fairy: <a href="https://lh3.googleusercontent.com/proxy/Z7fDUvw_khLhXUQ3S6IO5qppvlgG_f2pKZjOItvTjO7fH6hSEwdRae3zHGTE_UKydCI2AjuPFL-ylsNwg6lqaZ6LwcSksvhP46CVknPUYWB8Zw" target="_blank">https://lh3.googleusercontent.com/proxy/Z7fDUvw_khLhXUQ3S6IO5qppvlgG_f2pKZjOItvTjO7fH6hSEwdRae3zHGTE_UKydCI2AjuPFL-ylsNwg6lqaZ6LwcSksvhP46CVknPUYWB8Zw</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h3>Benefits Section</h3>
+                    
+                    <div class="reference-category">
+                        <h4>Image Sources</h4>
+                        <ul class="reference-list">
+                            <li>Drawing static background art - Source: <em>Love Live!</em></li>
+                            <li>Scenes crowded with people - Source: <em>The Wind Rises</em></li>
+                            <li>In-between frames - Source: <em>The Wind Rises</em></li>
+                            <li>Background Production Comparison: The above two images are generated based on a photograph taken by the website owner in Colmar, France, June 2024</li>
+                            <li>AI Turing Test - Question 1 Image 1 (Human): <a href="https://x.com/LoveLive_staff/status/1813513985586831795" target="_blank">LoveLive! Days</a></li>
+                            <li>AI Turing Test - Question 1 Image 2 (AI): Generated by Gemini Nano Banana Pro</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reference-category">
+                        <h4>Example 1: K&K Design</h4>
+                        <ul class="reference-list">
+                            <li><a href="https://kr-asia.com/japans-anime-industry-looks-to-ai-to-solve-labor-crunch" target="_blank">Japan's anime industry looks to AI to solve labor crunch</a></li>
+                            <li><a href="https://www.nikkei.com/article/DGXZQOUA309VP0Q4A730C2000000/" target="_blank">日本アニメ、AIと分業で作画サクサク　長時間労働是正へ</a></li>
+                            <li><a href="https://kandk-d.com/" target="_blank">Official website of K&K Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="reference-category">
+                        <h4>Example 2: 逆水寒 (Justice Online)</h4>
+                        <ul class="reference-list">
+                            <li><a href="https://h.163.com/news/official/20240820/37231_1175682.html" target="_blank">玩个游戏变成女娲了？在逆水寒AI生命体都能捏了！</a></li>
+                            <li><a href="https://gnn.gamer.com.tw/detail.php?sn=270253" target="_blank">開放世界 MMO《逆水寒》製作人專訪 結合 AI 技術打造顛覆傳統的新時代 MMO</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h3>Risks Section</h3>
+                    
+                    <div class="reference-category">
+                        <h4>Risk 1: Journal Article</h4>
+                        <ul class="reference-list">
+                            <li>Bellaiche, L., Shahi, R., Turpin, M. H., et al. (2023). Humans versus AI: whether and why we prefer human-created compared to AI-created artwork. <em>Cognitive Research: Principles and Implications</em>, 8, 42. <a href="https://link.springer.com/article/10.1186/s41235-023-00499-6" target="_blank">https://link.springer.com/article/10.1186/s41235-023-00499-6</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="reference-category">
+                        <h4>Hayao Miyazaki and Studio Ghibli</h4>
+                        <ul class="reference-list">
+                            <li>Miyazaki, H. (Director). (2013). <em>The Wind Rises</em> [Film]. Studio Ghibli.</li>
+                            <li>Miyazaki, H. (Director). (2008). <em>Ponyo</em> [Film]. Studio Ghibli.</li>
+                            <li>Studio Ghibli Official Website: <a href="https://www.ghibli.jp/" target="_blank">https://www.ghibli.jp/</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mau King Sum Ken - For BBED6725 assingment.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
